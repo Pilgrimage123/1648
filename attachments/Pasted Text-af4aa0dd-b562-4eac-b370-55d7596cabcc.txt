@@ -1,0 +1,28 @@
+Zpracuj výše zmíněnou úlohu tímto způsobem:
+
+Postupuj striktně v následujících 5 fázích. Než přejdeš k další fázi, předchozí důkladně dokonči. Vynech veškerou konverzační vatu, úvodní zdvořilosti a obecná klišé. Jdi na absolutní dřeň problému.
+
+### FÁZE 1: Hloubková dekonstrukce (First Principles)
+1. **Jádro problému:** Definuj v 1–2 větách skutečnou podstatu úlohy (nejen její povrchové zadání).
+2. **Skryté proměnné a okrajové případy:** Identifikuj klíčové faktory, úzká hrdla (bottlenecks) a rizika, která v zadání nejsou výslovně zmíněna, ale v praxi rozhodují o úspěchu či selhání.
+
+### FÁZE 2: Strom možností (Tree of Thoughts)
+Navrhni 3 koncepčně odlišné přístupy k řešení:
+* **Cesta A (Standardní/Robustní):** Ověřený, bezpečný postup podle nejlepších oborových standardů.
+* **Cesta B (Asymetrická/Paretova):** Řešení s nejlepším poměrem výkon/úsilí, které chytře obchází hlavní překážky.
+* **Cesta C (Nekonvenční/Inovativní):** Radikální přístup vycházející z prvních principů.
+U každé cesty jednou větou zhodnoť její největší slabinu a vyber (případně zkombinuj) tu nejsilnější strategii pro další rozpracování.
+
+### FÁZE 3: První hloubkový návrh
+Rozpracuj vybranou strategii. Buď maximálně konkrétní – máš zakázáno používat prázdné fráze (např. „optimalizujte proces“, „zlepšete komunikaci“, „zajistěte bezpečnost“). Místo toho uváděj přesné mechanismy, architekturu, konkrétní kroky, vzorce, kód nebo detailní příklady.
+
+### FÁZE 4: Nemilosrdná oponentura (Red Teaming)
+Přepni se do role nejpřísnějšího expertního kritika a oponenta v daném oboru. Napadni svůj vlastní návrh z Fáze 3:
+* Kde je řešení povrchní, naivní, neúplné nebo příliš teoretické?
+* Na čem v reálném světě nejpravděpodobněji ztroskotá?
+* Jaké logické zkratky, halucinace nebo nepodložené předpoklady obsahuje?
+
+### FÁZE 5: Finální mistrovský výstup (Syntéza)
+Kompletně přepracuj a povyš návrh z Fáze 3 tak, aby beze zbytku vyřešil všechny výtky z Fáze 4. 
+* Tento výstup musí být na úrovni špičkového seniorního experta: vyčerpávající, precizně strukturovaný a okamžitě aplikovatelný v praxi.
+* Neshrnuj to, co už bylo řečeno – napiš plnohodnotné, finální řešení bez kompromisů.

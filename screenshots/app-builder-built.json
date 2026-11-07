@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Malá Strana 1648",
+      "hasCanvas": true,
+      "bodyTextLen": 1398,
+      "bodyTextHash": "15013b678804c3582cd8573b37f445664b3bfc0fb91056219e5727f2a2cd7863",
+      "bodyTextPrefix": "PRAHA · 26. ČERVENCE Malá Strana 1648 Před útokem Kolo 1 Císařšt",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Malá Strana 1648",
+      "hasCanvas": true,
+      "bodyTextLen": 1398,
+      "bodyTextHash": "15013b678804c3582cd8573b37f445664b3bfc0fb91056219e5727f2a2cd7863",
+      "bodyTextPrefix": "PRAHA · 26. ČERVENCE Malá Strana 1648 Před útokem Kolo 1 Císařšt",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,31 @@
+Jsi seniorní vývojář her v čistém JavaScriptu (Vanilla JS + HTML5 Canvas). Vytvoř pro mě kompletní, plně hratelnou 2D tahovou taktickou hru ve stylu XCOM zasazenou do Prahy roku 1648 (noční přepad Malé Strany Švédy).
+
+ARCHITEKTURA PROJEKTU:
+Rozděl hru do přehledné vícesouborové struktury pomocí nativních ES6 modulů (import/export):
+1. `index.html` – kostra stránky, Canvas (960x576 px, mřížka 15x9 políček po 64 px) a barokní UI panely.
+2. `style.css` – temný barokní vizuál (černá, zlatá, krvavě červená, pergamen).
+3. `config.js` – konstanty mřížky, krytů a autentických zbraní z roku 1648.
+4. `units.js` – definice postav a nepřátel.
+5. `map.js` – mřížka Malé Strany: levý okraj start u paláce, pravý okraj řeka Vltava s políčkem "Loďka", mezitím kamenné zdi (plný kryt: -50 % zásah) a dřevěné vozy/barikády (poloviční kryt: -25 % zásah).
+6. `combat.js` – střelba, boj zblízka, kouř z černého prachu, nabíjení a katolická morálka.
+7. `main.js` – herní smyčka, vykreslování, ovládání myší, střídání tahů, AI Švédů a podmínky výhry/prohry.
+
+POSTAVY HRÁČE (4 jednotky na levé straně mapy):
+1. Maršál Colloredo (VIP): 6 HP, 2 AP. Nemá zbraň. Schopnost "Rozkaz" (1 AP: přidá spojenci +1 AP). Pokud zemře, hra končí prohrou.
+2. Martin (Císařský dragoun): 10 HP, 2 AP. Má kolečkovou pistoli (dosah 4, 1 AP výstřel, 1 AP nabíjení) + rapír na blízko (dosah 1.5, 1 AP, nemusí se nabíjet).
+3. Václav z Klementina (Student): 7 HP, 2 AP. Má doutnákovou mušketu (dosah 8, vysoké poškození, ale nabíjení stojí celé 2 AP a má 12% šanci na selhání výstřelu ve vlhku).
+4. Mistr Jakub (Malostranský kovář): 13 HP, 2 AP. Má halapartnu (dosah 2 pole, 1 AP) a schopnost "Hradba" (Overwatch na 2 pole – automaticky bodne a zastaví prvního Švéda, který se přiblíží).
+
+KLÍČOVÉ MECHANIKY BOJE (Třicetiletá válka + XCOM):
+- Každá jednotka má 2 Akční body (AP) na kolo. Pohyb o 1–3 pole stojí 1 AP.
+- Palné zbraně začínají nabité. Po výstřelu se musí ručně nabít přes tlačítko v UI. Výstřel vytvoří na políčku střelce na 1 kolo "Kouř" (poskytuje poloviční kryt).
+- Katolická schopnost "Střelná modlitba" ("Ježíši, Maria, pomoz!"): Každý ze 3 hrdinů ji může použít 1x za hru (stojí 0 AP) – vyléčí 3 HP a přidá +25 % na přesnost příštího útoku.
+
+DVOUFÁZOVÝ SCÉNÁŘ MISE (Přežije jen jeden!):
+- FÁZE 1 (Útěk uličkami): Hráč se probíjí přes 4 švédské vojáky (2 mušketýři, 2 pikenýři) směrem k loďce na pravém okraji mapy.
+- FÁZE 2 (Poslední vzdor u Vltavy): Jakmile Colloredo stoupne na políčko s loďkou, spustí se finále. Loďka uveze jen Colloreda a JEDNOHO hrdinu. Hráč musí k loďce přivést 1 vybraného hrdinu a kliknout na "Odplout s Colloredem". Zbylí 2 živí hrdinové musí zůstat na břehu (nebo padnout v boji) a 3 kola odrážet posily Švédů, než se loďka odváže. Mise končí dramatickým epilogem v UI, který jmenuje jednoho přeživšího hrdinu a vzdá čest dvěma padlým mučedníkům.
+
+PRAVIDLA PRO VÝSTUP KÓDU:
+Napiš kompletní, plně funkční kód bez jakýchkoliv vynechávek (žádné komentáře typu "// zbytek kódu doplň zde"). Vzhledem k délce kódu postupuj ve dvou krocích:
+1. Nejprve vypiš kompletní soubory `index.html`, `style.css`, `config.js`, `units.js` a `map.js`.
+2. Na konci zprávy se zastav a napiš: "Napiš 'pokračuj' pro vygenerování `combat.js` a `main.js`."
